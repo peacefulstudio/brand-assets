@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="855" viewBox="0 0 1400 855" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Pipeline from Daml DAR to typed C#, ledger and PQS">
+<defs>
+<marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1 1 L11 6 L1 11 Z" fill="#9d9d9d"/></marker>
+<marker id="t" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1 1 L11 6 L1 11 Z" fill="#8fd4cf"/></marker>
+</defs>
+<rect width="1400" height="855" fill="#1e1e1e"/>
+<text x="40" y="62" fill="#e0e0e0" font-size="34" font-weight="700">From Daml DAR to typed C#, ledger and PQS</text>
+<text x="40" y="96" fill="#9d9d9d" font-size="20">One typed model across every layer</text>
+<g transform="translate(0 165)">
+<g stroke-width="2.5" fill="#252526">
+<rect x="40" y="200" width="200" height="110" rx="14" stroke="#ecd439"/>
+<rect x="345" y="200" width="230" height="110" rx="14" stroke="#9c7ba0"/>
+<rect x="680" y="200" width="240" height="110" rx="14" stroke="#6f9be0"/>
+<rect x="1025" y="200" width="150" height="110" rx="14" stroke="#8fd4cf"/>
+<rect x="1240" y="200" width="130" height="110" rx="14" stroke="#e0e0e0"/>
+<rect x="680" y="400" width="240" height="120" rx="14" stroke="#9c7ba0"/>
+</g>
+<g fill="#e0e0e0" font-size="26" font-weight="700" text-anchor="middle">
+<text x="140" y="262">Daml DAR</text>
+<text x="460" y="248">Typed C#</text>
+<text x="800" y="248" font-size="23">ICantonLedgerClient</text>
+<text x="1100" y="248">gRPC</text><text x="1100" y="284">JSON API</text>
+<text x="1305" y="248" font-size="22">Canton</text><text x="1305" y="280" font-size="22">participant</text>
+<text x="800" y="450" font-size="24">Typed PQS client</text>
+</g>
+<g fill="#9d9d9d" font-size="18" text-anchor="middle">
+<text x="460" y="278">records, choices,</text><text x="460" y="300">Try...Async</text>
+<text x="800" y="282">one client, either transport</text>
+<text x="800" y="484">C# expression</text><text x="800" y="506">to Postgres predicate</text>
+</g>
+<g stroke="#9d9d9d" stroke-width="3" fill="none" marker-end="url(#a)">
+<path d="M242 255 H343"/><path d="M577 255 H678"/><path d="M922 255 H1023"/><path d="M1177 255 H1238"/>
+<path d="M460 312 V460 H678"/>
+<path d="M922 460 H1305 V312"/>
+</g>
+<text x="292" y="184" fill="#ecd439" font-size="19" font-weight="700" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" text-anchor="middle">dpm codegen-cs</text>
+<text x="1110" y="380" fill="#9d9d9d" font-size="17" text-anchor="middle">PQS reads from the participant</text>
+<rect x="40" y="570" width="1330" height="56" rx="12" fill="none" stroke="#8fd4cf" stroke-width="2.5" stroke-dasharray="10 8"/>
+<text x="705" y="606" fill="#8fd4cf" font-size="22" font-weight="700" text-anchor="middle">OpenTelemetry traces across all three: gRPC, REST and PQS</text>
+</g>
+<g>
+<rect x="345" y="120" width="620" height="190" rx="14" fill="#252526" stroke="#8fd4cf" stroke-width="2.5"/>
+<text x="375" y="156" fill="#e0e0e0" font-size="24" font-weight="700">NuGet packages</text>
+<text x="375" y="182" fill="#9d9d9d" font-size="17">Splice bindings come from the same codegen, plus the runtime and clients</text>
+<g fill="#1e1e1e" stroke="#8fd4cf" stroke-width="1.5">
+<rect x="375" y="196" width="290" height="32" rx="16"/><rect x="675" y="196" width="270" height="32" rx="16"/>
+<rect x="375" y="236" width="290" height="32" rx="16"/><rect x="675" y="236" width="270" height="32" rx="16"/>
+</g>
+<g fill="#8fd4cf" font-size="16" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" text-anchor="middle">
+<text x="520" y="218">Splice.Api.Token.Holding.V2</text><text x="810" y="218">Splice.*</text>
+<text x="520" y="258">Daml.Runtime</text><text x="810" y="258">Canton.Ledger.*</text>
+</g>
+<text x="375" y="298" fill="#9d9d9d" font-size="16">Splice.* is 33 packages; Daml.Finance.* bindings too</text>
+</g>
+<path d="M460 312 V358" stroke="#8fd4cf" stroke-width="3" fill="none" marker-end="url(#t)"/>
+<text x="480" y="340" fill="#8fd4cf" font-size="17" font-weight="700">reference from NuGet</text>
+<text x="40" y="825" fill="#9d9d9d" font-size="20">Canton .NET SDK 0.6.0</text>
+<text x="1370" y="825" fill="#e0e0e0" font-size="20" font-weight="700" text-anchor="end">Peaceful Studio</text>
+</svg>
